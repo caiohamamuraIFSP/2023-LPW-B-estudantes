@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex-Vue</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="app">
+        {{carregar}}
+        <button @click="button" v-if="visivel" id="carregar">Abrir Pokedex</button>
+        <ol id="listaAnimes">
+            <div v-for="pokemon in pokemons" :key="pokemon.pokedex">
+                <li>
+                <div><h2>{{pokemon.nome}}</h2>
+                <img :src ="pokemon.imagem">
+                <div v-for="tipo in pokemon.tipo" id="tipo">
+                <p>{{tipo}}</p>
+            </div>
+            </div>
+        </li>
+        </ol>
+    <script src="scriptS.js"></script>
+</body>
+</html>

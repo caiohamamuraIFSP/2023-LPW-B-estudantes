@@ -1,0 +1,6 @@
+*{margin: 0;padding: 0;}
+
+canvas {
+    height: calc(100vh - 10px);
+    width: 100%;
+}

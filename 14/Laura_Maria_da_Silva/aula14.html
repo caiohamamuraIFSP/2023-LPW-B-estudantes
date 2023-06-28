@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        {{msgCarregando}}
+        <ol id="listaDisney">
+            <div v-for="item in disney" :key="item.disney">
+                <li>{item.disney}</li>
+                <img :src="item.imagem" alt="">
+            </div>
+        </ol>
+        <button id="btndisney" @click="carregadisney" v-if="mostraBotao">Ver imgs disney</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

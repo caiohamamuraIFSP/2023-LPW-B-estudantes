@@ -1,0 +1,42 @@
+<!--
+   IFSP | LPW
+
+    .by. :
+        ♡. bianca lamar; ( bia )
+        ♡. jhovanna souza; ( cassy )
+
+    date : 11.05.2023
+
+.⁣ ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>.tic tac toe.</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="header">playing now: <span id="player"></span></h1>
+    <table id="frame">
+      <tr>
+        <td onclick="toplay(0, 0)"></td>
+        <td onclick="toplay(0, 1)"></td>
+        <td onclick="toplay(0, 2)"></td>
+      </tr>
+      <tr>
+        <td onclick="toplay(1, 0)"></td>
+        <td onclick="toplay(1, 1)"></td>
+        <td onclick="toplay(1, 2)"></td>
+      </tr>
+      <tr>
+        <td onclick="toplay(2, 0)"></td>
+        <td onclick="toplay(2, 1)"></td>
+        <td onclick="toplay(2, 2)"></td>
+      </tr>
+    </table>
+    <button id="restart" onclick="restartGame()" disabled>restart</button>
+    <script src="script.js"></script>
+  </body>
+</html>

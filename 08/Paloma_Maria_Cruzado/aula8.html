@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mamacos do Artico</title>
+</head>
+
+<style>
+    * {
+        background-color: #2f323b;
+        color: rgb(199, 182, 182);
+    }
+    .odd {
+      background-color: #010102;
+    }
+</style>
+
+<body>
+    <p>My favorite 5 Arctic Monkeys songs + the two most listened</p>
+  <ul id="song"></ul>
+
+  <script>
+    var songArctic = ["Ru' Mine?", "Knee Socks", "Electricity", "Mardy Bum", "Do i Wanna Know"];
+    var song = document.getElementById("song");
+
+    for (var i = 0; i < songArctic.length; i++) {
+      var li = document.createElement("li");
+      li.textContent = songArctic[i];
+
+      if (i % 2 !== 1) {
+        li.classList.add("odd");
+      }
+
+      song.appendChild(li);
+    }
+  </script>
+</body>
+</html>

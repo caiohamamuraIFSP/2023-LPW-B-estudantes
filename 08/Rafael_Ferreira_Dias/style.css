@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #faedcd;
+}
+h1 {
+	font-size: 4rem;
+	margin-top: 1rem;
+	color: #d4a373;
+}
+ul {
+	margin-top: 2rem;
+	list-style: none;
+}
+li {
+	text-align: center;
+	color: #000;
+	margin: 1rem;
+	padding: 10px;
+	font-size: 2.5rem;
+}
+li:hover{
+	background-color: #fefae0;
+	border-radius: 15px;
+}

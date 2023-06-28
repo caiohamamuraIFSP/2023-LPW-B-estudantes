@@ -1,0 +1,22 @@
+[
+    {
+        "nome" : "Pikachu",
+        "tipo" : ["Elétrico"],
+        "imagem" : "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"
+    },
+    {
+        "nome" : "Charmander",
+        "tipo" : ["Fogo"],
+        "imagem" : "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"
+    },
+    {
+        "nome" : "Bulbasaur",
+        "tipo" : ["Planta", "Veneno"],
+        "imagem" : "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+    },
+    {
+        "nome" : "Squirtle",
+        "tipo" : ["Água"],
+        "imagem" : "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png"
+    }
+]

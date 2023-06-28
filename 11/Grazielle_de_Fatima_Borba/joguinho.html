@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo de Adivinhação</title>
+</head>
+<body>
+	<h1 style="color:red">Jogo de Adivinhação</h1>
+	<p>Eu DUVIDO VOCE adivinhar o número entre 1 e 100 em até 10 tentativas flor.</p>
+	<input id="guess" type="number" min="1" max="100">
+	<button onclick="guessNumber()">Adivinhar</button>
+	<p id="result"></p>
+
+	<script>
+		// Gera um número aleatório entre 1 e 100
+		const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+		// Inicializa o número de tentativas
+		let guesses = 0;
+
+		// Função que verifica se adivinhou o número
+		function guessNumber() {
+			const guess = parseInt(document.getElementById("guess").value);
+			guesses++;
+
+			if (guess === randomNumber) {
+				document.getElementById("result").innerHTML = `Parabéns! Você adivinhou o número em ${guesses} tentativas.`;
+			} else if (guesses === 10) {
+				document.getElementById("result").innerHTML = `Você não adivinhou o número em 10 tentativas. O número era ${randomNumber}.`;
+			} else if (guess < randomNumber) {
+				document.getElementById("result").innerHTML = `O número é maior do que ${guess}. Tente novamente.`;
+			} else if (guess > randomNumber) {
+				document.getElementById("result").innerHTML = `O número é menor do que ${guess}. Tente novamente.`;
+			}
+		}
+	</script>
+</body>
+</html>
+

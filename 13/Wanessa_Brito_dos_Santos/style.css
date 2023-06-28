@@ -1,0 +1,13 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    background-color:lightblue;
+}
+button{
+    background-color:khaki;
+    border-color: aliceblue;
+    border-radius: 10%;
+}

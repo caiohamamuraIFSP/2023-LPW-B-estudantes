@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@300;700&display=swap');
+body {
+  font-family: 'Luckiest Guy';
+  margin: 0;
+  font-style: bold;
+
+}
+
+h1 {
+  font-size: 10vh;
+  margin: 5vh;
+  padding: 0;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  width: min(25vw, 22vh);
+  height: min(25vw, 22vh);
+  border: 1px solid;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  font-style: bold;
+}
+
+td:hover {
+  background-color: lightgray;
+}
+#one{
+  display: flex;
+  position: absolute;
+  justify-content: left;
+  height: 100vh;
+  z-index: -1;
+}
+#two{
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  height: 100vh;
+  padding-left: 1050px;
+  z-index: -1;
+}
+button{
+ width: 100vw;
+ height: 10vh;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+
+ 
+}

@@ -1,0 +1,77 @@
+/* html {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+#app {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "head head"
+    "nav main";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 140px 1fr;
+} */
+
+.v-toolbar {
+}
+
+.v-toolbar img {
+    width: auto;
+    object-fit: contain;
+    justify-self: flex-end;
+    padding-right: 8px
+
+}
+
+.v-main {
+    height: calc(100vh - 64px);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.v-autocomplete {
+    margin-left: 8px
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0px 142px 0 0px;
+}
+/* 
+#aulas {
+    width: 91vw;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+}*/
+
+#aulas .v-list-item.naoFeito {
+    background-color: #555;
+    cursor:not-allowed;
+} 
+
+.v-list.active>.v-list-item {
+    box-shadow: inset 0px 0px 5px 5px #c91518;
+}
+
+#aulas .v-list-item {
+        width: 140px;
+        padding: 10px;
+        margin: 3px;
+        list-style-type: none;
+        color: white;
+        background-color: #379936;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 600;
+}
+

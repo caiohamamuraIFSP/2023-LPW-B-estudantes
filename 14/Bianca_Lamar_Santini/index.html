@@ -1,0 +1,40 @@
+<!--
+   IFSP | LPW
+
+    .by. :
+        ♡. bianca lamar; ( bia )
+        ♡. jhovanna souza; ( cassy )
+
+    date : 23.06.2023
+
+.⁣ ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>.bissy songs.</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{msgLoading}}
+        <ol id="listSongs">
+            <div v-for="item in songs" :key="item.song">
+                <li>{{item.song}}</li>
+                <p>{{item.artist}}</p>
+                <p>{{item.year}}</p>
+                <p>{{item.indicatedby}}</p>
+                <img :src="item.img" alt="">
+               
+            </div>
+        </ol>
+        <button id="btnSongs" @click="loadSongs" v-if="showButton">see list ;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

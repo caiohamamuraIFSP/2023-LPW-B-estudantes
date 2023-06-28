@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Da Velha - Aula 09</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1 id="header">Jogador Atual: <span id="player"></span></h1>
+        <div id="feedback">
+            <div id="rank">
+                <pre>Jogador <font color="red">X</font>                 Jogador <font color="blue">O</font></pre>
+            </div>
+            <div id="rank">
+                <span id="xPoint"></span><span id="oPoint"></span>
+            </div>
+        </div>
+        <table id="board">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h1 id="restart">Pressione 'R' ou clique <button onclick="restart()">Aqui</button> para reiniciar o jogo!</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

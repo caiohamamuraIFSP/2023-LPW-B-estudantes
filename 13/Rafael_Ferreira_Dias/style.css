@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#pokedex li {
+    margin: 2rem;
+}
+#pokedex {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+#pokedex div {
+  border: 3px solid #000;
+  box-shadow: 2px 4px 10px #000;
+}
+#pokedex p {
+  font-size: 1.8rem;
+  font-family: fantasy;
+}
+#carregar{
+    position: relative;
+    width: 120px;
+    justify-self:center;
+    height: 30px;
+    font-family: 'Poppins';
+    background-color: #f7d346;
+    color: #000;
+    border-radius: 5px;
+    padding: 6px;
+    border: none;
+    animation: back .3s ease-in-out forwards;
+}
+#carregar:hover{
+    transition: .3s;
+    left: 2.5rem;
+    animation: expandir .3s ease-in-out forwards;
+    box-shadow: 5px 5px 10px #ffbe0b;
+}
+@keyframes back {
+    from {
+        width: 180px;
+        left: 0%;
+    }
+    to {
+        width: 120px;
+        left: 2rem;
+    }
+}
+@keyframes expandir {
+    to{
+        width: 180px;
+        left: 0%;   
+    }
+}

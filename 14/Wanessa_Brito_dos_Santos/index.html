@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id = "app">
+        <h2 id="bri">{{brigadeiro.titulo}}</h2>
+        <ul>
+            <div v-for="(item, indice) in brigadeiro.lista" :key="indice">
+                <li>{{item}}</li>
+            </div>
+        </ul>
+        <img v-if="brigadeiro.lista.length > 0" src="brigadeirogiga.jpg">
+
+        <h2 id="pas">{{pastel.titulo}}</h2>
+        <ul>
+            <div v-for="(item, indice) in pastel.lista":key="indice">
+                <li>{{item}}</li>
+            </div>
+        </ul>
+
+        <h2 id="mou">{{mousse.titulo}}</h2>
+        <ul>
+            <div v-for="(item, indice) in mousse.lista":key="indice">
+                <li>{{item}}</li>
+            </div>
+        </ul>
+
+        <button @click="mostraReceita">Receitinhas</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- The above code creates a table on an html page. It uses the "estilo.css" and "script.js" files to apply formatting and add functionality to the page. The table has three rows and three columns, each column being an empty td element. This creates a tic-tac-toe board for the user to interact with. -->
+<html lang="pt-br">
+  <head><link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5969/5969254.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <br>
+    <img id="im" src="Assets/logo.webp" alt="" draggable="false">
+    <img src="Assets/Sam.png" draggable="false"> 
+    <h1 id="cabecalho">Jogando: <span id="jogador"></span></h1>
+    <table id="quadro">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <button id="reiniciar" onclick="refresh()">REINICIAR GAME<span id="jogador"></span></button> <a>Desenvolvido por: Lucas Rosada & Gabriel Campagnolli</a>
+      <script src="script.js"></script>
+    </table>
+    <br><br>
+    <script src="script.js"></script>
+  </body>
+</html>

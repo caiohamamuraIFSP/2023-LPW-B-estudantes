@@ -1,0 +1,228 @@
+<!--
+   IFSP | LPW
+
+    .by. :
+        ♡. bianca lamar; ( bia )
+        ♡. jhovanna souza; ( cassy )
+
+    date : 23.06.2023
+
+.⁣ ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>.bissy ghost game.</title>
+    <style>
+        canvas {
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <p>no ' ghost game ' da bissy, você controla um fantasma, o objetivo do jogo é capturar todas as chaves espalhadas pelo ambiente enquanto evita ser capturado pelos zumbis.</p>
+    <p>após recolher todas as três chaves, você deve mover-se até a porta de saída!!</p>
+    <p>controle o fantasma com o mouse !!</p>
+    <p>boa aventura :)</p>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        var playerImage = new Image();
+        playerImage.src = "https://media.discordapp.net/attachments/1122522417470902332/1122993536929906790/671132437b4cf6b99099f9f5c43c5658-removebg-preview.png";
+
+        var doorImage = new Image();
+        doorImage.src = "https://media.discordapp.net/attachments/1122522417470902332/1122996048491712593/f9179707bf30a598cc92030e69e67fd9-removebg-preview.png?width=318&height=406";
+
+        var keyImage = new Image();
+        keyImage.src = "https://media.discordapp.net/attachments/1122522417470902332/1122993536430776330/1abf7a0a25ceeba2874c23e98cab0d72-removebg-preview.png?width=406&height=406";
+
+        var zombieImage = new Image();
+        zombieImage.src = "https://media.discordapp.net/attachments/1122522417470902332/1122993535893897236/b9d2c4e498f2947ea07d2ef055be1493-removebg-preview.png?width=541&height=406";
+
+        var player = { x: canvas.width / 2, y: canvas.height / 2, width: 50, height: 50, speed: 5, keysCollected: 0 };
+
+        var door = { x: canvas.width - 70, y: canvas.height / 2 - 25, width: 50, height: 50 };
+
+        var zombies = [
+            { x: canvas.width - 50, y: 50, width: 50, height: 50, speed: 2 },
+            { x: canvas.width - 50, y: canvas.height - 120, width: 50, height: 50, speed: 2 },
+            { x: canvas.width / 2, y: canvas.height / 2 - 50, width: 50, height: 50, speed: 3 },
+            { x: 100, y: canvas.height / 2 - 50, width: 50, height: 50, speed: 3 }
+        ];
+
+        var keys = [
+            { x: 100, y: 100, width: 40, height: 40 },
+            { x: canvas.width - 140, y: 100, width: 40, height: 40 },
+            { x: canvas.width / 2 - 20, y: canvas.height - 140, width: 40, height: 40 }
+        ];
+
+        var gameOver = false;
+        var gameWin = false;
+
+        document.addEventListener("keydown", keyDownHandler, false);
+        document.addEventListener("keyup", keyUpHandler, false);
+        canvas.addEventListener("mousemove", mouseMoveHandler, false);
+        canvas.addEventListener("touchmove", touchMoveHandler, false);
+
+        var rightPressed = false;
+        var leftPressed = false;
+        var upPressed = false;
+        var downPressed = false;
+
+        function keyDownHandler(event) {
+            if (event.keyCode === 39) {
+                rightPressed = true;
+            }
+            else if (event.keyCode === 37) {
+                leftPressed = true;
+            }
+            else if (event.keyCode === 38) {
+                upPressed = true;
+            }
+            else if (event.keyCode === 40) {
+                downPressed = true;
+            }
+        }
+
+        function keyUpHandler(event) {
+            if (event.keyCode === 39) {
+                rightPressed = false;
+            }
+            else if (event.keyCode === 37) {
+                leftPressed = false;
+            }
+            else if (event.keyCode === 38) {
+                upPressed = false;
+            }
+            else if (event.keyCode === 40) {
+                downPressed = false;
+            }
+        }
+
+        function mouseMoveHandler(event) {
+            var relativeX = event.clientX - canvas.offsetLeft;
+            var relativeY = event.clientY - canvas.offsetTop;
+            if (relativeX > 0 && relativeX < canvas.width && relativeY > 0 && relativeY < canvas.height) {
+                player.x = relativeX - player.width / 2;
+                player.y = relativeY - player.height / 2;
+            }
+        }
+
+        function touchMoveHandler(event) {
+            var relativeX = event.touches[0].clientX - canvas.offsetLeft;
+            var relativeY = event.touches[0].clientY - canvas.offsetTop;
+            if (relativeX > 0 && relativeX < canvas.width && relativeY > 0 && relativeY < canvas.height) {
+                player.x = relativeX - player.width / 2;
+                player.y = relativeY - player.height / 2;
+            }
+        }
+
+        function drawPlayer() {
+            ctx.drawImage(playerImage, player.x, player.y, player.width, player.height);
+        }
+
+        function drawDoor() {
+            ctx.drawImage(doorImage, door.x, door.y, door.width, door.height);
+        }
+
+        function drawZombies() {
+            for (var i = 0; i < zombies.length; i++) {
+                ctx.drawImage(zombieImage, zombies[i].x, zombies[i].y, zombies[i].width, zombies[i].height);
+            }
+        }
+
+        function drawKeys() {
+            for (var i = 0; i < keys.length; i++) {
+                ctx.drawImage(keyImage, keys[i].x, keys[i].y, keys[i].width, keys[i].height);
+            }
+        }
+
+        function drawGameOver() {
+            ctx.font = "30px Arial";
+            ctx.fillStyle = "#000000";
+            ctx.fillText("game over :(", canvas.width / 2 - 80, canvas.height / 2);
+        }
+
+        function drawGameWin() {
+            ctx.font = "30px Arial";
+            ctx.fillStyle = "#000000";
+            ctx.fillText("you win :)", canvas.width / 2 - 60, canvas.height / 2);
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (gameOver) {
+                drawGameOver();
+                return;
+            }
+
+            if (gameWin) {
+                drawGameWin();
+                return;
+            }
+
+            drawPlayer();
+            drawDoor();
+            drawZombies();
+            drawKeys();
+
+            if (rightPressed && player.x + player.width < canvas.width) {
+                player.x += player.speed;
+            }
+            else if (leftPressed && player.x > 0) {
+                player.x -= player.speed;
+            }
+            else if (upPressed && player.y > 0) {
+                player.y -= player.speed;
+            }
+            else if (downPressed && player.y + player.height < canvas.height) {
+                player.y += player.speed;
+            }
+
+            for (var i = 0; i < keys.length; i++) {
+                if (player.x < keys[i].x + keys[i].width &&
+                    player.x + player.width > keys[i].x &&
+                    player.y < keys[i].y + keys[i].height &&
+                    player.y + player.height > keys[i].y) {
+                    keys.splice(i, 1);
+                    player.keysCollected++;
+
+                    if (player.keysCollected === 5) {
+                        gameWin = true;
+                    }
+                }
+            }
+
+            for (var i = 0; i < zombies.length; i++) {
+                zombies[i].x += zombies[i].speed;
+
+                if (zombies[i].x < player.x + player.width &&
+                    zombies[i].x + zombies[i].width > player.x &&
+                    zombies[i].y < player.y + player.height &&
+                    zombies[i].y + zombies[i].height > player.y) {
+                    gameOver = true;
+                }
+
+                if (zombies[i].x + zombies[i].width > canvas.width || zombies[i].x < 0) {
+                    zombies[i].speed *= -1;
+                }
+            }
+
+            if (player.x < door.x + door.width &&
+                player.x + player.width > door.x &&
+                player.y < door.y + door.height &&
+                player.y + player.height > door.y) {
+                gameWin = true;
+            }
+
+            requestAnimationFrame(draw);
+        }
+
+        draw();
+    </script>
+</body>
+</html>

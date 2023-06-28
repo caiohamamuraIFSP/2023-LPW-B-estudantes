@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+    color: black;
+    display: grid;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    transition: 2s;
+    position: relative;
+  }
+#escuro{
+    background-color: black;
+    color: aliceblue;
+    position: relative;
+}
+#claro{
+    background-color: white;
+    color: black;
+}
+#color{
+    background-color:lightpink;
+    color:purple;
+}
+#mar{
+    background-color: lightskyblue;
+    color: cornflowerblue;
+}
+button{
+    border-radius: 5px;
+    border: 1px solid;
+}
+button:hover{
+    transition: 1s;
+    width: 100px;
+    height: 20px;
+    background-color:burlywood  ;
+}
+#oi{
+    top: 50%;
+    bottom: 20%;
+}

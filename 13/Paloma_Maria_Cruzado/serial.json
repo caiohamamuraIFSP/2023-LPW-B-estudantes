@@ -1,0 +1,27 @@
+[
+    {
+        "killer": "- Jeffrey Dahmer",
+        "year": "- 21/05/1960 - 28/11/1994",
+        "history": "- Jefrey Dahmer foi um assassino em série norte-americano que matou 17 pessoas, em sua maioria homens e meninos, entre os anos de 1978 e 1991. O serial killer matava praticando estupro, necrofilia e até canibalismo, chocando os Estados Unidos na época e nos dias de hoje.",
+        "img": "https://uploads.metropoles.com/wp-content/uploads/2022/09/27130848/Card4-1-1024x682.jpg"
+    },
+    
+    {
+        "killer": "- John Wayne Gacy, o Palhaço Assassino",
+        "year": "- 17/03/1942 - 10/05/1994",
+        "history": "- John Wayne Gacy, conhecido também como o Palhaço Assassino, foi um serial killer dos Estados Unidos que cometeu seus crimes na região metropolitana de Chicago. Suas vítimas foram, ao menos, 33 adolescentes entre os anos de 1972 e 1978, mortos por facadas, asfixia e estrangulamento. A maioria dos corpos foram escondidos em sua própria casa. ",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-c4spmmkrS92tlG1leOFFH_fi9HGD2-WSno9yT7TVJCzoJLEv0PgMe4QUVDW8hly_WE&usqp=CAU"
+    },
+    {
+        "killer": "- Ted Bundy",
+        "year": "- 24/11/1946 - 24/01/1986",
+        "history": "- Ted Bundy, um dos primeiros serial killers reconhecidos dos Estados Unidos, foi um homem extremamente cruel disfarçado de homem de família, trabalhador e estudioso. Sem que todos soubessem, dedicava seu tempo livre para sequestrar, estuprar e assassinar mulheres.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqVdJ3aGtjgr0w3kh_uEFI9jYrm5ZqUviN_pRL07rk4FpghE4ZpTQDMCdsxMOeCqORkcw&usqp=CAU"
+    },
+    {
+        "killer": "- Jack, o Estripador",
+        "year": "- Período em atividade: entre 1888 e 1891",
+        "history": "- O serial killer Jack, o Estripador nunca teve seu nome identificado. Ele cometeu crimes na periferia de Whitechapel, em Londres, no ano de 1888, tendo como alvo garotas de programa. O assassino cortava a garganta e o abdômen das vítimas, retirando seus órgãos internos, o que dava a entender que ele tinha um certo conhecimento sobre anatomia e cirurgias.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/JacktheRipper1888.jpg/230px-JacktheRipper1888.jpg"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "especie": "Macaco-dourado",
+        "imagem": "https://socientifica.com.br/wp-content/uploads/2022/09/monkey3.webp?ezimgfmt=rs:800x480/rscb4/ng:webp/ngcb4"
+
+    },
+    {
+        "especie": "Mandril",
+        "imagem" : "https://socientifica.com.br/wp-content/uploads/2022/09/monkey4-862x700.webp?ezimgfmt=rs:800x650/rscb4/ng:webp/ngcb4"
+    },
+    {
+        "especie": "Macaco-narigudo",
+        "imagem": "https://socientifica.com.br/wp-content/uploads/2022/09/monkey5.webp?ezimgfmt=rs:800x534/rscb4/ng:webp/ngcb4"
+
+    },
+    {
+        "especie": "Macaco-japonês",
+        "imagem" : "https://socientifica.com.br/wp-content/uploads/2022/09/monkey6-933x700.webp?ezimgfmt=rs:800x600/rscb4/ng:webp/ngcb4"
+    }
+]

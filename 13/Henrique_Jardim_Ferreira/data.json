@@ -1,0 +1,34 @@
+[
+    {
+        "game": "Minecraft",
+        "releaseYear": "18 de novembro de 2011",
+        "price": "R$ 129,00",
+        "developer":"Mojang Studios, 4J Studios, Other Ocean Interactive, Xbox Game Studios",
+        "plataform":"iOS, Java, Nintendo Switch, Android, PlayStation 4, MAIS",
+        "image":"photoMinecraft.png"
+    },
+    {
+        "game": "Valorant",
+        "releaseYear": "2 de junho de 2020",
+        "price": "Gratuito",
+        "developer":"Riot Games",
+        "plataform":"Microsoft Windows",
+        "image":"photoValorant.png"
+    },
+    {
+        "game": "Candy Crush",
+        "releaseYear": "12 de abril de 2012",
+        "price": "Gratuito",
+        "developer":"King",
+        "plataform":"Android, IOS",
+        "image":"photoCandyCrush.png"
+    },
+    {
+        "game": "Phasmophobia",
+        "releaseYear": "18 de setembro de 2020",
+        "price": "R$ 27,89",
+        "developer":"Kinect Games",
+        "plataform":"PlayStation 5, Microsoft Windows, Xbox Series X e Series S",
+        "image":"photoPhasmophobia.png"
+    }
+]

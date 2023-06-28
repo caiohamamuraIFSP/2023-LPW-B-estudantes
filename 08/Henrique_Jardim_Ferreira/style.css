@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*
+    Ice blue #90F1EF
+    Mimi Pink #FFD6E0
+    Flax #FFEF9F
+    +Ligth Green #C1FBA4
+    light Green.2 #7BF1A8
+    non Photo Blube #ACDDE7
+    Periwinkie #ADB9E3
+    Columbia blue #COE8F9
+    Lavender (floral) #A379C9 
+    VAnilla #EDDEA4
+    Plum #DCABDF
+    @hydratulip
+*/
+img {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    width: 300px;
+}
+
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #ACDDE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.page {
+    border-radius: 15px;
+    background-color: white;
+    display: grid;
+    position: relative;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+    grid-template-columns: 350px auto;
+}
+
+.selector {
+    grid-column: 1 / 2;
+    background-color:  #C1FBA4;
+    position: relative;
+    display: grid;
+    height: 80vh;
+    width: 350px;
+    border-radius: 15px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.3);
+    grid-template-rows: 1fr 1fr;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionsMenu {
+    display: flex;
+    flex-flow: column;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+.optionsMenu button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    margin: auto 0;
+    transition: 1s all;
+}
+.selected::before{
+    content: '>';
+    color: green;
+}
+.selected::after{
+    background-color: green;
+}
+button::after{ 
+    position: relative;
+    content: ' ';
+    display: block;
+    margin: 10px auto 0;
+    width: 150px;
+    height: 1px;
+    background-color: black;
+}
+
+
+
+.optionsMenu button:hover:not(.selected) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.option.selected {
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+::-webkit-scrollbar{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.247);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px ;
+    background-color: white;
+}

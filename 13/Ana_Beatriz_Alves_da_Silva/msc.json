@@ -1,0 +1,50 @@
+[
+    {
+        "musica": "Tá OK",
+        "cantores": "Dennis DJ / Mc Kevin o Chris",
+        "ano": "2023",
+        "estilo": "Funk do RJ",
+        "tempo": "1:58min",
+        "imagem": "https://i.scdn.co/image/ab67616d00001e026b19d46024e623f257363a36"
+    },
+    {
+        "musica": "Lapada Dela",
+        "cantores": "Grupo Menos é Mais e Matheus Fernandes",
+        "ano": "2023",
+        "estilo": "Pagode",
+        "tempo": "2:49min ",
+        "imagem": "https://i.scdn.co/image/ab67616d0000b2732f4bcf77b2cebd2d8498c904"
+    },
+    {
+        "musica": "Seu Brilho Sumiu",
+        "cantores": "Israel & Rodolfo, Mari Fernandez",
+        "ano": "2023",
+        "estilo":"Sertanejo",
+        "tempo":"2:49min",
+        "imagem": "https://lastfm.freetls.fastly.net/i/u/ar0/796c4f87c638dbb35589ce25668ff75e.jpg"
+    },
+    {
+        "musica": "Nosso Quadro",
+        "cantores": "Ana Castela",
+        "ano": "2023",
+        "estilo":"Pop",
+        "tempo":"2:55min",
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/6/64/Nosso_Quadro_-_Ana_Castela.jpeg"
+    },
+    {
+        "musica": "Novo Balanço",
+        "cantores": "Veigh",
+        "ano": "2023",
+        "estilo":"Trap",
+        "tempo":"2:21min",
+        "imagem": "https://pbs.twimg.com/media/FxDQOU2WAAQJW1Q.jpg"
+    },
+    {
+        "musica": "Cartão Black",
+        "cantores": "MC Caverinha, Kayblack",
+        "ano": "2023",
+        "estilo":"Trap",
+        "tempo":"3:33min",
+        "imagem": "https://imagestore.ffm.to/link/07c6b615fe7d3e6456b7738833c7ec0e.jpeg"
+    }
+]

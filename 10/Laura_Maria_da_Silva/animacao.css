@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+#bola-rosa {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(190, 75, 181);
+    border-radius: 60px;
+}

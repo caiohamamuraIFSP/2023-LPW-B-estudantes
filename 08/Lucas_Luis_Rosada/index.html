@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://logos-download.com/wp-content/uploads/2018/07/Marvel_logo_red.png" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-08</title>
+</head>
+<body>
+	<script>
+		window.onload = function() {
+			let items = ["Quadrinho 1", "Quadrinho 2", "Quadrinho 3", "Quadrinho 4", "Quadrinho 5", "Quadrinho 6", "Quadrinho 7"];
+			let ul = document.getElementById("lista");
+			for(let i=0; i<items.length; i++) {
+				let li = document.createElement("li");
+				li.appendChild(document.createTextNode(items[i]));
+				ul.appendChild(li);
+			}
+			let oddItems = document.querySelectorAll("li:nth-child(odd)");
+			for(let i=0; i<oddItems.length; i++) {
+				oddItems[i].style.backgroundColor = "#ef2c16";
+			}
+		}
+	</script>
+	<style>
+		li {
+			padding: 10px;
+			margin: 5px;
+			background-color: #00b460;
+		}
+	</style>
+	<h1>Lista de quadrinhos:</h1>
+	<ul id="lista"></ul>
+</body>
+</html>

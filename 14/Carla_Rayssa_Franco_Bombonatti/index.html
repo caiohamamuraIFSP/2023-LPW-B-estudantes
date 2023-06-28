@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="app">
+        {{msgCarregando}}
+        <ol id="listaCachorro">
+            <div v-for="item in raca" :key="item.raca">
+                <li>{{item.raca}}</li>
+                <img :src="item.imagem" alt="">
+            </div>
+        </ol>
+        <button id="btnCachorro" @click="carregaCachorro" v-if="mostraBotao">Ver lista de raça de cachorro</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

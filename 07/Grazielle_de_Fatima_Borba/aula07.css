@@ -1,0 +1,28 @@
+img{
+    height: 10vw;
+}
+
+.inicio{
+    display: flex;
+}
+.bo{
+    display: flex;
+    align-items: center;
+}
+.centro{
+    margin: auto;
+}
+
+#imagem{
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: auto;
+}
+
+#idTitulo{
+
+    color: rgb(252, 252, 252);
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;}

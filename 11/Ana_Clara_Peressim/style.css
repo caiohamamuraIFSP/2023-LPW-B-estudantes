@@ -1,0 +1,18 @@
+canvas {
+    width: min(176.777777778vh, 100vw);
+    height: min(100vh, 56.25vw);
+}
+
+canvas {
+    margin: auto;
+    background: rgb(226, 187, 210);
+}
+
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #c95d9f;
+        }

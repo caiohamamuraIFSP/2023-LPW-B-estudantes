@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+#bola-azul {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(35, 49, 253);
+    border-radius: 60px;
+}

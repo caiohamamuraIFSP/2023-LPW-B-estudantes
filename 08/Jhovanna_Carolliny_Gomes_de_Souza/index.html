@@ -1,0 +1,50 @@
+<!--
+   IFSP | LPW
+
+    .by. :
+        ♡. bianca lamar; ( bia )
+        ♡. jhovanna souza; ( cassy )
+
+    date : 05.05.2023
+
+.⁣ ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀. ⁣⁣ ⠀ ⁣⁣ ⠀.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>.bissy lista.</title>
+</head>
+
+<style>
+    * {
+        background-color: #18191c;
+        color: white;
+    }
+    .odd {
+      background-color: #2d2e33;
+    }
+</style>
+
+<body>
+    <p>.alguns filmes que benedict cumberbatch participa :).</p>
+  <ul id="lista"></ul>
+
+  <script>
+    var listaItens = [".desejo e reparação.", ".o quinto poder.", ".stuart : uma vida revista.", ".doutor estranho.", ".o jogo da imitação."];
+    var lista = document.getElementById("lista");
+
+    for (var i = 0; i < listaItens.length; i++) {
+      var li = document.createElement("li");
+      li.textContent = listaItens[i];
+
+      if (i % 2 !== 0) {
+        li.classList.add("odd");
+      }
+
+      lista.appendChild(li);
+    }
+  </script>
+</body>
+</html>
