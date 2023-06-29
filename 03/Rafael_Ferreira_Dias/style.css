@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 150vh;
+    background-color: #252525;
+}
+#laranja {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    border: 2px solid #000;
+    margin: 20px;
+    top: 90px;
+}
+#azul {
+    position: relative;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+#verde {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 120px;
+    background-color: green;
+}
+#sticky {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    background-color: rgb(155, 111, 190);
+    border: 1px solid #000;
+    z-index: 1;
+}

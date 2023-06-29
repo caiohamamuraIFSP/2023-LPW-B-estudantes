@@ -1,0 +1,33 @@
+#titulo{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:lightblue;
+    position: absolute;
+    height: 48%;
+    width: 50%;
+    top: 35%;
+    left: 30%;
+    margin: -35px 0 0 -25px;
+    border-radius: 5%;
+}
+body{
+    background-image: url(https://i.pinimg.com/564x/a3/f7/f1/a3f7f14cacf6486cbb8e0b92fd53fb34.jpg);
+    opacity: 0.8;
+    margin: 50%;
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+body:hover{
+    opacity: 0.9;
+}
+button{
+    border: 1px solid;
+    height: 23px;
+    border-style: hidden;
+    font-size: 20px;
+}
+button:hover{
+    background-color: SteelBlue;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        Nota1: <input type="number" name="valor" id="valor">
+    </div>
+    <div>
+        Nota2: <input type="number" name="valor2" id="valor2">
+    </div>
+    <div>
+        Nota3: <input type="number" name="valor3" id="valor3">
+    </div>
+    <div>
+        Nota4: <input type="number" name="valor4" id="valor4">
+    </div>
+
+    <button onclick="calcula()">Calcula</button>
+    <div id="resultado"></div>
+
+    <script>
+        function calcula() {
+            resultado.innerHTML = (valor.valueAsNumber + valor2.valueAsNumber + valor3.valueAsNumber + valor4.valueAsNumber) / 4;
+            console.log(resultado.innerHTML);
+        }
+    </script>
+
+</body>
+</html>

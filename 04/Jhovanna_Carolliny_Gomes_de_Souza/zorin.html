@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.110 cm.</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caixa div {
+    text-align: center;
+    color: rgb(39, 37, 37);
+    font-size: 18px;
+    margin: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-gap: 10px;
+}
+.head {
+    text-align: justify;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: #18191c;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #814f4f;
+    background-image: url(https://i.pinimg.com/564x/a8/74/bc/a874bc08c4c9a2a2ccf3300f4676fb13.jpg);
+    background-size: 5px 5px 10px;
+    background-position: center
+}
+.left {
+    background-image: url(https://i.pinimg.com/564x/f8/3f/a3/f83fa32fd02893085ceb59f4fcda1e8d.jpg);
+    background-position: center;
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 10px;
+}
+.right {
+    background-image: url(https://i.pinimg.com/564x/37/57/b0/3757b02202907dfa5adac8163746c91d.jpg);
+    grid-row: 2;
+    grid-column: 3;
+    border-radius: 10px;
+}
+.main {
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(https://media.discordapp.net/attachments/1012490532863361055/1084952118751928412/6_Sem_Titulo_20230313183123.png);
+    background-position: center;
+    background-size: auto;
+    
+    border-radius: 10px;
+
+}
+</style>
+<body>
+    <div class="caixa">
+        <div class="div head">.zoro solador.</div>
+        <div class="div main"><p></p></div>
+        <div class="div left"></div>
+        <div class="div right"></div>
+    </div>
+</body>
+</html>

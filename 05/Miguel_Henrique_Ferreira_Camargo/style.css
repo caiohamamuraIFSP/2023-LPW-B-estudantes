@@ -1,0 +1,46 @@
+ul li:nth-child(3) {
+    color: red;
+}
+ul li:nth-child(2) {
+    color: purple;
+}
+ul li:nth-child(4) {
+    color: blue;
+}
+ul li:nth-child(5) {
+    color: yellowgreen;
+}
+ul li:nth-child(1) {
+    color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+
+body {
+    font-size: 20px;
+}
+li {
+    font-size: 2em;
+    padding: 40px ;
+}
+img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 900px){
+    ul{
+        flex-direction: column;
+    }
+}

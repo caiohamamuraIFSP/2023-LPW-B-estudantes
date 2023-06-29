@@ -1,0 +1,186 @@
+/* 
+ * IMPORTANDO UMA FONTE EXTERNA
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); 
+
+/*
+ * CORPO DA PAGINA
+ */
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+/*
+ * DIV ONDE SERÁ ORGANIZADO EM DISPLAY GRID 
+ */
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 15fr;
+    transition: 1s;
+}
+/*
+ * CABEÇALHO
+ */
+header {
+    border-bottom: 1px black solid;
+    flex-flow: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    justify-content: center;
+    grid-column: 1 / 4;
+    background-color: rgba(176, 224, 230, 0.85);
+}
+
+#logo {
+    border: rgba(0, 0, 0, 0.65) solid 2px;
+    border-radius: 50%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    grid-column: 1/2;
+    background-color: rgba(254,223,73,255);
+    height: 30px;
+    width: 50px;
+}
+
+#olho1 {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 1px ;
+    animation: piscar 5s linear infinite;
+}
+#olho2 {
+    position:relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 1px ;
+    animation: piscar 5s linear infinite;
+}
+#boca{
+    border-radius: 30%;
+    position: absolute;
+    top: 38px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+}
+#logo:hover #boca{
+    border-radius: 50%;
+}
+
+@keyframes piscar {
+    0% {
+        height: 7px;
+        transform: translateY(0px);
+    }
+    4% {
+        transform: translateY(3px);
+    }
+    5% {
+        height: 1px;
+    }
+    10% {
+        transform: translateY(0px);
+        height: 7px;
+    }
+    100% {
+        height: 7px;
+    }
+}
+
+.optionsH {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+#op1, #op2, #op3, #op4 {
+    position: relative;
+}
+/*
+ * NAV's
+ */
+#nav1 {
+    background-color: rgba(220, 220, 220, 0.2);
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+    transition: all 1s;
+}
+
+#nav2 {
+    background-color: rgba(220, 220, 220, 0.2);
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+
+}
+
+#openClose{
+    border-radius: 5px;
+    background-color: gainsboro;
+    font-family: 'poppins', sans-serif;
+    border-style: none;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transition: 1s;
+}
+
+#container.aberto1 {
+    grid-template-columns: 3fr 2fr 1fr;
+}
+
+#abre, #fecha {
+    color: black;
+    position: absolute;
+    transition: 1s;
+}
+
+#fecha {
+    color: transparent;
+}
+
+#abre.some {
+    transform: rotate(360deg);
+    color: transparent;
+}
+
+#fecha.apar {
+    transform: rotate(360deg);    
+    color: black;
+}
+
+/*
+ * CONTEUDO 
+ */
+
+#conteudo {
+    background-color: rgba(220, 220, 220, 0.2);
+    position: relative;
+    display: flex;
+    align-items: start;
+    flex-flow:column;
+    padding: 30px 30px;
+    overflow-y: scroll;
+    border: 1px black solid;
+    border-top-color:transparent;
+}

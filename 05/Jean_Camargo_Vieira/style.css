@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+.div {
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-size: 1.8rem;
+    text-align: center;
+}
+p:hover {
+    opacity: 0.5;
+}
+thead th {
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.8rem;
+}
+table {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    border: 3px solid;
+    box-shadow: 2px 3px #000;
+}
+table, td, th {
+    border-collapse: collapse;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+table tr:nth-child(2n+2) {
+    background-color: red;
+    color: #fff;
+}
+th {
+    background-color: darkgreen;
+    color: aliceblue;
+}
+td:hover {
+    transform: scale(1.4);
+}
+.list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.list > ul {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+.list h1 {
+    text-align: center;
+    width: 100vw;
+    animation: chegar .3s ease-in-out;
+}
+ul {
+    display: flex;
+}
+ul li {
+    padding: 5px;
+    list-style: none;
+}
+@media (max-width: 600px) {
+    ul {
+        flex-flow: column;
+    }
+}
+@keyframes chegar {
+    0% {
+        position: absolute;
+        left: -50%;
+    }
+    50% {
+        left: -25%;
+    }
+    75% {
+        left: -5%;
+    }
+    100% {
+        position: relative;
+        left: auto;
+    }
+}

@@ -1,0 +1,33 @@
+
+#laranja{
+    position: fixed;
+    height: 4%;
+    width: 100%;
+    background-color: orange;
+}
+
+#gray{
+position: relative ;
+width: 3330px;
+height: 3330px;
+background-color: rgb(196, 189, 189) ;
+}
+
+#aqua{
+position: relative;
+top: 30px;
+left: 30px;
+width: 150px;
+height: 150px;
+background-color: aqua;
+}
+
+#pink{
+position: absolute;
+top: 40px;
+left: 40px;
+width: 129px;
+height: 129px;
+background-color: rgb(247, 140, 158);
+
+}

@@ -1,0 +1,67 @@
+body {margin: 100;}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+    transition: 1s;
+}
+
+#container.nav-aberto {
+    grid-template-columns: 15fr 45fr;
+}
+
+header {
+    background-color: rgb(255, 77, 77);
+    grid-column: 1 / 4;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+    font-size: 4em;
+}
+
+nav {
+    background-color: rgb(235, 248, 70);    
+    grid-row: 2 / 4;
+    margin: 10px;
+}
+
+#conteudo {
+    background-color: rgb(114, 179, 209);   
+    grid-row: 3 / 2; 
+    margin: 10px;
+}
+
+ul{
+    font-size: 2em;
+    transition: 500ms linear;
+}
+
+footer {
+    background-color: rgb(235, 248, 70);   
+    grid-row: 3 / 2; 
+    margin: 10px;
+}
+
+img:hover {
+    animation-duration: 2s;
+    animation-name: gira;
+}
+
+@keyframes gira {
+    30% {
+        transform: rotate(-45deg);
+        opacity: 0;
+    }
+
+    60% {
+        color: greenyellow;
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular medias</title>
+</head>
+
+<body>
+    <h1>Calcule a média de notas:</h1>
+    <div>
+        Valor1: <input type="number" name="valor1" id="valor1">
+    </div>
+    <div>
+        Valor2: <input type="number" name="valor2" id="valor2">
+    </div>
+    <div>
+        Valor3: <input type="number" name="valor3" id="valor3">
+    </div>
+    <div>
+        Valor4: <input type="number" name="valor4" id="valor4">
+    </div>
+    <button onclick="botao()">Calcular</button>
+    <div id="resultado"></div>
+    <script>
+        function botao()
+        {
+            resultado.innerHTML = (valor1.valueAsNumber + valor2.valueAsNumber + valor3.valueAsNumber + valor4.valueAsNumber) / 4;
+        }
+
+    </script>
+</body>
+
+</html>

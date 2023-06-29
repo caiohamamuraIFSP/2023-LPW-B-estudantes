@@ -1,0 +1,8 @@
+h1, h2, div{
+    color:rgb(196, 74, 185)
+}
+.centro {
+    padding-top: 200px;
+    display: block;
+    text-align: center;
+}

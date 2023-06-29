@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="titulo">
+        <h1>Calculadora</h1>
+        <div id="container"></div>
+        <div id="box"></div>
+        <div>
+            Digite um número: <input type="number" name="numero1" id="numero1">
+        </div><br>
+        <div>
+            Digite outro número: <input type="number" name="numero2" id="numero2">
+        </div><br>
+            <button onclick="soma()">Soma</button>
+            <button onclick="subtração()">Subtração</button>
+            <button onclick="multiplicação()">Multiplicação</button>
+            <button onclick="divisão()">Divisão</button>
+            <div id="resul"></div>
+
+            <script id="java">
+                function soma(){
+                    resul.innerHTML = numero1.valueAsNumber + numero2.valueAsNumber;
+                    console.log(resul.innerHTML);
+                }
+                function subtração(){
+                    resul.innerHTML = numero1.valueAsNumber - numero2.valueAsNumber;
+                    console.log(resul.innerHTML);
+                }
+                function multiplicação(){
+                    resul.innerHTML = numero1.valueAsNumber * numero2.valueAsNumber;
+                    console.log("o resultado é", resul.innerHTML);
+                }
+                function divisão(){
+                    if(numero2 == 0){
+                        console.log("Não é possivel realizar");
+                    }
+                    else{
+                        resul.innerHTML = numero1.valueAsNumber / numero2.valueAsNumber;
+                        console.log(resul.innerHTML);
+                    }
+                }
+            </script>
+    </div>
+</body>
+</html>

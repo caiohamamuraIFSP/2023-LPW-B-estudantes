@@ -1,0 +1,60 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.titulo{
+    display: block;
+    text-align: center;
+}
+
+#paragrafo{
+    display: block;
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+    height: 350px;
+    width: 550px;
+}
+
+.verde{
+    color: green;
+}
+a{
+    text-decoration: none;
+    color: rgb(19, 92, 16);
+}
+
+h2{
+    text-indent: 1em; 
+}
+
+img:hover {
+    animation-duration: 5s;
+    animation-name: gira;
+}
+
+
+@keyframes gira {
+    50% {
+        transform: rotate(-50deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(50deg);
+    }
+
+}
+
+li:nth-child(-n +  2)
+{
+    color: rgb(66, 129, 58);
+}

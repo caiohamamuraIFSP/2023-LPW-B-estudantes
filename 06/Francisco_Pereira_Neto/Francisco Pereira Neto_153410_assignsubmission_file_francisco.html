@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora </title>
+</head>
+
+<body>
+    <h1> Calculadora de valores:</h1>
+    <div>
+        Valor1: <input type="number" name="Valor1" id="Valor1">
+    </div>
+    <div>
+        Valor2: <input type="number" name="Valor2" id="Valor2">
+    </div>
+    <div>
+        Valor3: <input type="number" name="Valor3" id="Valor3">
+    </div>
+    <div>
+        Valor4: <input type="number" name="Valor4" id="Valor4">
+    </div>
+    <button onclick="botao()">Calcular</button>
+    <div id="resultado"></div>
+    <script>
+        function botao()
+        {
+            resultado.innerHTML = (Valor1.valueAsNumber + Valor2.valueAsNumber + Valor3.valueAsNumber + Valor4.valueAsNumber) /2;
+        }
+    </script>
+</body>
+
+</html>

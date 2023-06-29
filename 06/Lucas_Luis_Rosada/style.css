@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); 
+body{margin: 0;font-family: 'poppins', sans-serif;}
+.gira {
+    border-top: 2px solid rgb(11, 11, 11) !important;
+    animation: girar 0.3s linear;
+    
+}
+#quad {
+    margin: auto;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.low{
+    transition: 0.5s;
+    background-color: rgba(255, 99, 71, 0.5);
+}
+.medium{
+    transition: 0.5s;
+    background-color: rgb(255, 255, 1, 0.5);
+}
+.high {
+    transition: 0.5s;
+    background-color: rgba(172, 255, 47, 0.5);
+}
+.nothing {
+    transition: 0.5s;
+    background-color: white;
+}
+#tabela{
+    padding-top: 20px;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+td.elementClass.baixa {
+    background-color: tomato;
+}
+input[type=number] {
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    outline: none;
+    border-collapse: collapse;
+    margin: 0;
+    width: 75px;  
+    height: 20px;  
+    border: none;
+    
+}
+th{
+    font-weight:200;
+}
+th,td {
+    padding: 0px 10px;
+    text-align: center;
+    border: 1px black solid;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button{
+    font-size: 20px;
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    border: 1.4px solid rgb(15, 14, 14);
+    border-radius: 5cm;
+    background-color: white;
+}
+th , tr td:nth-child(1),button:hover{
+    background-color: rgba(0,0,0, 0.1) ;
+    border-radius: 5cm;
+}
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

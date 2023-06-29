@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 200vh;
+    background-image: url(R.png);
+    background-size: 69cm;
+}
+#mete {
+    position: fixed;
+    top: 15px;
+    right: 50px;
+}
+#fogo {
+    position: absolute;
+    bottom: -90%;
+}

@@ -1,0 +1,54 @@
+img {
+    height: 100px;
+    float:left;
+}
+
+p {
+    color: deeppink;
+    text-align: justify;
+    padding:30px
+    
+    
+}
+
+.conteudo {
+    border: dashed;
+    overflow: auto;
+}
+
+#externo {
+
+    background-color: deeppink;
+    position: absolute;
+    top:12vw;
+    left:10vw;
+    width: 80vw;
+    height:100vh;
+    margin-top: 10px;
+
+}
+#conteudo2 {
+    position: sticky;
+    top:300px ;
+    left: 550px;
+    width: 20vw;
+    height: 10vh;
+    background-color: rgb(224, 124, 158);
+    border-color: crimson;
+    border-style: solid;
+    border-width: 5px;
+    z-index: 1;
+}
+h1 {
+    color: rgb(153, 10, 105);
+}
+
+#interno {
+    position: relative;
+    width: 50vw;
+    height: 15vh;
+    background-color: rgb(190, 33, 138);
+    left: 200px;
+    top: 20px;
+}
+

@@ -1,0 +1,110 @@
+body {margin: 0;}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    transition: 1s;
+}
+
+#container.aberto {
+    grid-template-columns: 10fr 5fr;
+}
+
+header {
+    grid-column: 1 / 3;
+    justify-content: center;
+    flex-flow: row;
+    display: flex;
+    background-color: rgb(185, 161, 240);
+    border: 1px solid;
+}
+
+nav {
+    grid-row: 2 ;
+    background-color: rgb(136, 103, 212);
+    border: 1px;
+
+}
+h2{
+    font: size 40PX;
+}
+
+#conteudo {
+    grid-row: 2;
+    background-color: rgb(136, 103, 212);;
+    border: 1px solid;
+}
+
+footer {
+    grid-column: 1/3;
+    justify-content: center;
+    flex-flow: row;
+    display: flex;
+    background-color: rgb(202, 187, 236);
+    border: 1px solid;
+}
+
+h2{
+    font-size: 40px;
+}
+#ul{
+    font-size: 2cm;
+    transition: 50ms linear;
+}
+li{
+    font-size: 1cm;
+}
+img.h2{
+    animation-duration: 2s;
+    animation-name: gira;
+}
+@keyframes gira{
+    30%{
+        transform: rotate(-45deg);
+        opacity: 0;
+    }
+    60%{
+        color: black;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: black solid 2px;
+    padding: 20px
+}
+
+img:hover {
+    animation-duration: 2s;
+    animation-name: gira;
+}
+
+@keyframes gira {
+    30% {
+        transform: rotate(-45deg);
+        opacity: 0;
+    }
+
+    60% {
+        color: greenyellow;
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+

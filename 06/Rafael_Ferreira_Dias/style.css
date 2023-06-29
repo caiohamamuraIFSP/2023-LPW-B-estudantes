@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(-180deg,#024059, #04BF8A);
+}
+.form {
+	margin-top: 8rem;
+}
+.form label {
+	font-size: 2.2rem;
+	color: #fff;
+}
+.form input {
+	width: 4rem;
+	height: 4rem;
+	text-align: center;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	margin-left: 2rem;
+	transition: .3s;
+
+}
+.form input:focus {
+	width: 8rem;
+	transition: .3s;
+}
+.normal {
+	color: #06D6A0;
+	font-size: 2rem;
+	text-align: center;
+}
+.danger {
+	font-size: 2rem;
+	color: #ef476f;
+	text-align: center;
+}
+.sobrePeso {
+	font-size: 2rem;
+	color: #FFD166;
+	text-align: center;
+}
+.form div:nth-child(2n) {
+	margin-top: 1rem;
+	margin-left: 1.4rem;
+}
+.obeso {
+	font-size: 2rem;
+	color: #e26634;
+	text-align: center;
+}
+.condi {
+	text-align: center;
+	font-family: 'Poppins';
+	color: #fff;
+	font-size: 2rem;
+}
+#calc {
+	width: 100px;
+	height: 40px;
+	font-size: 1.6rem;
+	border-radius: 22px;
+	display: block;
+	margin: 4rem auto;
+	color: #fff;
+	background-color: #03A64A;
+	transition: .4s;
+	position: relative;
+	border: none;
+}
+#calc:hover {
+	width: 140px;
+	transition: .3s;
+}
+#resul {
+	font-size: 2.4rem;
+	padding: 20px;
+	color: #8ecae6;
+}

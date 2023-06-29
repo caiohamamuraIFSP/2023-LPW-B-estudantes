@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+
+<body>
+    <h1>IMC: </h1>
+    <div>
+        PESO: <input type="number" name="valor1" id="valor1">
+    </div>
+    <div>
+        ALTURA: <input type="number" name="valor2" id="valor2">
+    </div>
+    <button onclick="botao()">Calcular</button>
+    <div id="resultado"></div>
+    <script>
+        function botao()
+        {
+            resultado.innerHTML = (valor1.valueAsNumber / (valor2.valueAsNumber ** 2)).toFixed(2);
+        }
+
+    </script>
+</body>
+
+</html>

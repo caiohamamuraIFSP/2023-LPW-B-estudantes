@@ -1,0 +1,161 @@
+<!-- IFSP | lpw. -->
+<!-- .by. bia & cass -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.bissy.</title>
+
+</head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+.div {
+    display: flex;
+    justify-content: center;
+}
+thead th {
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.8rem;
+}
+table {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    border: 3px solid;
+    box-shadow: 2px 3px #000000;
+}
+table, td, th {
+    border-collapse: collapse;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+table tr:nth-child(2n+2) {
+    background-color: #e8aef7;
+    color: #000000;
+}
+th {
+    background-color: #792a9d;
+    color: aliceblue;
+}
+td:hover {
+    transform: scale(1.4);
+}
+.list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.list > ul {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+.list h1 {
+    text-align: center;
+    width: 100vw;
+    animation: chegar .3s ease-in-out;
+}
+
+ul {
+    display: flex;
+}
+ul li {
+    padding: 5px;
+    list-style: none;
+}
+@media (max-width: 600px) {
+    ul {
+        flex-flow: column;
+    }
+}
+@keyframes chegar {
+    0% {
+        position: absolute;
+        left: -50%;
+    }
+    50% {
+        left: -25%;
+    }
+    75% {
+        left: -5%;
+    }
+    100% {
+        position: relative;
+        left: auto;
+    }
+}
+
+</style>
+
+<body>
+
+<div class="div">
+        <table>
+            <thead>
+                <tr>
+                    <th>.pessoa.</th>
+                    <th>.idade.</th>
+                    <th>.animal preferido.</th>
+                    <th>.hobby.</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>.bia.</td>
+                        <td>.15 anos.</td>
+                        <td>.gato obv.</td>
+                        <td>.ouvir msc.</td>
+                    </tr>
+                    <tr>
+                        <td>.casti.</td>
+                        <td>.16 anos.</td>
+                        <td>.cachorro.</td>
+                        <td>.desenhar.</td>
+                    </tr>
+                    <tr>
+                        <td>.henry.</td>
+                        <td>.16 anos.</td>
+                        <td>.gato.</td>
+                        <td>.ouvir msc.</td>
+                    </tr>
+                    <tr>
+                        <td>.loma.</td>
+                        <td>.16 anos.</td>
+                        <td>.raposa.</td>
+                        <td>.ler.</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+</div>
+<div class="list">
+    <h1>.lista de músicas do momento da bia :).</h1>
+    <ul>
+        <li>.charmer - stray kids.</li>
+        <li>.alien - lee suhyun.</li>
+        <li>.you're so cool - tate mcrae.</li>
+        <li>.hype boy - new jeans.</li>
+    </ul>
+</div>
+
+</div>
+
+</body>
+
+</html>

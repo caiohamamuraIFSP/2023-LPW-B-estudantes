@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caixa div {
+    text-align: center;
+    color: rgb(39, 37, 37);
+    font-size: 18px;
+    margin: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caixa {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-gap: 10px;
+}
+.head {
+    text-align: justify;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    background-color: rgb(82, 175, 90);
+}
+.left {
+    background-color: pink;
+    grid-column: 1;
+    grid-row: 2;
+}
+.right {
+    background-color: pink;
+    grid-row: 2;
+    grid-column: 3;
+}
+.main {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: aquamarine;
+}

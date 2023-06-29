@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculadora de overalls </h1>
+    <div>
+        Ritmo: <input type="number" name="ritmo" id="ritmo">
+    </div>
+    <div>
+        Finalização: <input type="number" name="finalizacao" id="finalizacao">
+    </div>
+    <div>
+        Físico: <input type="number" name="fisico" id="fisico">
+    </div>
+    <div>
+        Defesa: <input type="number" name="defesa" id="defesa">
+    </div>
+    <div>
+        Drible: <input type="number" name="drible" id="drible">
+    </div>
+    <div>
+        Passe: <input type="number" name="passe" id="passe">
+    </div>
+    <button onclick="botao()">Calcular</button>
+    <div id="resultado"></div>
+    <script>
+        function botao()
+        {
+            resultado.innerHTML = (ritmo.valueAsNumber + finalizacao.valueAsNumber + fisico.valueAsNumber + defesa.valueAsNumber + drible.valueAsNumber + passe.valueAsNumber ) /6 ; 
+        }
+
+    </script>
+</body>
+
+</html>

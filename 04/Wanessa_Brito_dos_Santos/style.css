@@ -1,0 +1,45 @@
+body::-webkit-scrollbar-thumb{
+    background-color: purple;
+}
+body::-webkit-scrollbar{
+    background-color: plum;
+}
+body{
+    margin: 0;
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+}
+#nav{
+    background-color: wheat;
+    flex-flow: column;
+    display: flex;
+    
+}
+#nav1{
+    background-color: wheat;
+    flex-flow: column;
+    display: flex;
+}
+#conteudo{
+    background-color: pink;
+}
+header{
+    grid-column: 1 / 4;
+    background-color: powderblue;
+    justify-content: center;
+}
+#corzinha{
+    position: fixed;
+    position: fixed;
+    z-index: 1;
+    background-color: royalblue;
+}
+
+img {
+    max-height: 15vh;
+    max-width: 100%;
+}

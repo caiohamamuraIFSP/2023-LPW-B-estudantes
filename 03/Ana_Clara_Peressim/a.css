@@ -1,0 +1,31 @@
+#rosa{
+    position: static;
+    width: 5000px;
+    height: 5000px;
+    background-color: pink;
+}
+
+#cinza{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+}
+
+#aqua{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+#aquar{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: aquamarine;
+}

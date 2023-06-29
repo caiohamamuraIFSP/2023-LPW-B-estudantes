@@ -1,0 +1,52 @@
+body {margin: 0;}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    transition: 1s;
+}
+
+#container.aberto {
+    grid-template-columns: 10fr 5fr;
+}
+
+header {
+    grid-column: 1 / 3;
+    justify-content: center;
+    flex-flow: row;
+    display: flex;
+    background-color: rgb(185, 161, 240);
+    border: 1px solid;
+}
+
+nav {
+    grid-row: 2 ;
+    background-color: rgb(136, 103, 212);
+    border: 1px;
+
+}
+h2{
+    font: size 40PX;
+}
+
+#conteudo {
+    grid-row: 2;
+    background-color: rgb(136, 103, 212);;
+    border: 1px solid;
+}
+
+footer {
+    grid-column: 1/3;
+    justify-content: center;
+    flex-flow: row;
+    display: flex;
+    background-color: rgb(202, 187, 236);
+    border: 1px solid;
+}
+
+h2{
+    font-size: 40px;
+}
+

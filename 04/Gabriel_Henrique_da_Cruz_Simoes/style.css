@@ -1,0 +1,36 @@
+body {margin: 0;}
+
+#jogos {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    transition: 1s;
+}
+
+#jogos.aberto {
+    grid-template-columns: 10fr 5fr;
+}
+
+header {
+    grid-column: 1 / 3;
+    height: 80px;
+    text-align: center;
+    background-color: tomato;
+}
+
+nav {
+    grid-row: 2 / 4;
+    grid-column: 2;
+    background-color: green;
+    display: flex;
+}
+
+#conteudo {
+    background-color: orange;
+}
+
+footer {
+    height: 50px;
+    background-color: olive;
+}

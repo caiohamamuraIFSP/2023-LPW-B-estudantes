@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Média das notas: </h1>
+    <div>
+        Nota1: <input type="number" name="Nota1" id="Nota1" max="10" min="0">
+    </div>
+    <div>
+        Nota2: <input type="number" name="Nota2" id="Nota2" max="10" min="0">
+    </div>
+    <div>
+        Nota3: <input type="number" name="Nota3" id="Nota3" max="10" min="0">
+    </div>
+    <div>
+        Nota4: <input type="number" name="Nota4" id="Nota4" max="10" min="0">
+    </div>
+    <button onclick="botao()">Calcular</button>
+    <div id="resultado"></div>
+    <script>
+        function botao()
+        {
+            resultado.innerHTML = (Nota1.valueAsNumber + Nota2.valueAsNumber + Nota3.valueAsNumber + Nota4.valueAsNumber) / 4;
+        }
+
+    </script>
+</body>
+
+</html>

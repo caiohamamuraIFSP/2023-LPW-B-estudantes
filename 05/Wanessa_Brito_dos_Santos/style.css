@@ -1,0 +1,38 @@
+p:hover{
+    animation-duration: 5s;
+    animation-name: giro;
+}
+@keyframes giro{
+    30% {
+        transform: rotate(20deg);
+    }
+    60% {
+        transition: 5s;
+        color: pink;
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+table{
+    left: 10px;
+    border-collapse: collapse;
+}
+#titulo{
+    text-align: center;
+}
+td{
+    border: palevioletred solid;
+    padding: 2vh;
+}
+#center{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+body{
+    background-color:lemonchiffon;
+}
+.titulo{
+
+}

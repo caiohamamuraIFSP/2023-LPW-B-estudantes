@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Epilogue:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+}
+.sorry{
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 25px;
+    position: relative;
+    top: 200px;
+    
+
+    text-align: center;
+
+    color: #dddddd;
+}
+.fundo{
+    
+    background-image: url(img/fundocss3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.25;
+    
+
+    
+
+}
+
+.fundo{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.footer{
+    
+    border: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.git{
+
+    display: flex;
+    margin: auto;
+    height: 92px;
+    width: 92px;
+    position: relative;
+    right: 780px;
+    
+    
+    
+    
+    
+
+}
+.insta{
+    display: flex;
+    margin: auto;
+    height: 74px;
+    width: 74px;
+    position: relative;
+    right: 700px;
+    bottom: 85px;
+    
+
+}
+.linkedin{
+    display: flex;
+    margin: auto;
+    height: 56px;
+    width: 56px;
+    position: relative;
+    right: 540px;
+    bottom: 249px;
+
+}
+.whats{
+    display: flex;
+    margin: auto;
+    height: 96px;
+    width: 96px;
+    position: relative;
+    right: 620px;
+    bottom: 169px;
+
+}
+.retangulo1{
+    position: absolute;
+    width: 526px;
+    height: 673px;
+    left: 221px;
+    top: 163px;
+
+    background: #688368;
+    opacity: 0.2;
+    border-radius: 17px;
+}
+.retangulo2{
+    position: absolute;
+    width: 526px;
+    height: 675px;
+    left: 793px;
+    top: 161px;
+
+    background: #688368;
+    opacity: 0.2;
+    border-radius: 17px;
+}
+.textsign{
+    position: absolute;
+    width: 554px;
+    height: 256px;
+    left: 207px;
+    top: 192px;
+
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 55px;
+    
+    text-align: center;
+    letter-spacing: 0.010em;
+    
+
+    color: #bdf3cc;
+}
+.fontes{
+    position: absolute;
+    width: 141px;
+    height: 56px;
+    left: 360px;
+    top: 345px;
+
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90px;
+    background: transparent;
+    opacity: 0.6;
+    
+
+    text-align: center;
+
+    color: #24FF00;
+
+}
+.fonten{
+    position: absolute;
+    width: 125px;
+    height: 89px;
+    left: 473px;
+    top: 345px;
+    background: transparent;
+
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90px;
+    opacity: 0.6;
+    
+
+    text-align: center;
+
+    color: #FF0000;
+}
+.fontea{
+    position: absolute;
+    width: 121px;
+    height: 25px;
+    left: 327px;
+    top: 375px;
+    opacity: 0.5;
+    
+
+}
+.fonteb{
+    position: absolute;
+    width: 105px;
+    height: 25px;
+    left: 440px;
+    top: 375px;
+    background: transparent;
+    opacity: 0.5;
+}
+.texto1{
+    position: absolute;
+    width: 514px;
+    height: 96px;
+    left: 227px;
+    top: 446px;
+
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 25px;
+    
+
+    text-align: center;
+
+    color: #dddddd;
+
+}
+.texto2{
+    position: absolute;
+    width: 519px;
+    height: 251px;
+    left: 225px;
+    top: 550px;
+
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+
+    text-align: center;
+
+    color: #ffffff;
+
+}
+.cc{
+    position: absolute;
+    width: 252px;
+    height: 90px;
+    left: 872px;
+    top: 182px;
+    background: transparent;
+
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90px;
+    
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.cca{
+    background: transparent;
+}
+.button{
+    position: absolute;
+    width: 111px;
+    height: 93px;
+    left: 984px;
+    top: 677px;
+    background: transparent;
+    border: transparent;
+    background: transparent;
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 90px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+   
+}
+.fundobutton{
+    position: absolute;
+    width: 218px;   
+    height: 60px;
+    left: 931px;
+    top: 697px;
+
+    background: #035642;
+}
+.nameposition{
+    position: absolute;
+    width: 330px;
+    height: 45px;
+    left: 885px;
+    top: 302px;
+    background: transparent;
+    border: transparent;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90px;
+
+
+    color: #FFFFFF;
+    border: transparent;
+    background: transparent;
+
+}
+.NomeCompletoname{
+    position: absolute;
+    width: 148px;
+    height: 45px;
+    left: 877px;
+    top: 280px;
+    
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    border: transparent;
+    background: transparent;
+
+}
+.linename{
+    position: absolute;
+    width: 339px;
+    height: -58px;
+    left: 880px;
+    top: 340px;
+    border: 1.2px solid #ffffff;
+    background: #ffffff;
+
+
+}
+.emailposition{
+    position: absolute;
+    width: 330px;
+    height: 45px;
+    left: 885px;
+    top: 383px;
+    background: transparent;
+    border: transparent;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90px;
+    
+
+    color: #FFFFFF;
+    border: transparent;
+    background: transparent;
+
+
+}
+.E-mailemail{
+    position: absolute;
+    width: 59px;
+    height: 45px;
+    left: 885px;
+    top: 361px;
+   
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    border: transparent;
+    background: transparent;
+
+}
+.lineemail{
+    position: absolute;
+    width: 339px;
+    height: -58px;
+    left: 880px;
+    top: 421px;
+    border: 1.2px solid #ffffff;
+    background: #ffffff;
+}
+.dateposition{
+    
+    background: transparent;
+    position: absolute;
+    width: 138px;
+    height: 45px;
+    left: 885px;
+    top: 464px; 
+   
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    border: transparent;
+    background: transparent;
+    border: transparent;
+
+
+
+}
+.linedate{
+    position: absolute;
+    width: 339px;
+    height: -58px;
+    left: 880px;
+    top: 502px;
+    border: 1.2px solid #ffffff;
+    background: #ffffff;
+}
+.passwordposition{
+    position: absolute;
+    width: 330px;
+    height: 45px;
+    left: 885px;
+    top: 550px;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90px;
+
+    color: #FFFFFF;
+    border: transparent;
+    background: transparent;
+
+}
+
+.linepassword{
+    position: absolute;
+    width: 339px;
+    height: -58px;
+    left: 880px;
+    top: 588px;
+    border: 1.2px solid #ffffff;
+    background: #ffffff;
+}
+
+input::placeholder {
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90px;
+
+    color: #FFFFFF;
+    border: transparent;
+    background: transparent;
+}   
