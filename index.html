@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Alunos</title>
+    <title>Dashboard Estudantes</title>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
     <script src="https://unpkg.com/vue@3.3.4/dist/vue.global.prod.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@3.3.6/dist/vuetify.min.js"></script>
@@ -15,46 +15,72 @@
 <body>
     <div id="app">
         <v-app>
-            <div>
-                <v-toolbar dark prominent image="/img/banner_dark.png">
-                    <v-icon :icon="porAula ? 'mdi-lead-pencil' : 'mdi-school'" @click="porAula = !porAula;this.rail = !porAula;"></v-icon>
-                    <v-autocomplete v-if="!porAula" variant="underlined" :items="listaAlunos"
-                        v-model="aluno" @update:model-value="alunoAlterado"></v-autocomplete>
-                        <v-autocomplete v-if="porAula" variant="underlined" :items="listaAulas"
-                        v-model="aula" @update:model-value="aulaAlterada"></v-autocomplete>
+            <v-app-bar dark prominent>
+                <v-spacer v-if="!porAula"></v-spacer>
+                <v-app-bar-nav-icon v-if="porAula" @click="rail = !rail"></v-app-bar-nav-icon>
+                <v-spacer></v-spacer>
 
-                    <v-spacer></v-spacer>
 
-                </v-toolbar>
-                
-            </div>
+                <v-btn class="rounded-circle" @click="porAula = !porAula;this.rail = !porAula"
+                    :icon="porAula ? 'mdi-lead-pencil' : 'mdi-school'">
+                </v-btn>
+                <v-autocomplete v-if="!porAula" variant="underlined" :items="listaAlunos" v-model="aluno"
+                    @update:model-value="alunoAlterado"></v-autocomplete>
+                <v-autocomplete v-if="porAula" variant="underlined" :items="listaAulas" v-model="aula"
+                    @update:model-value="aulaAlterada"></v-autocomplete>
 
-            <v-card>
-                <v-layout>
+                <v-spacer></v-spacer>
 
-                    <v-main>
-                        <iframe :src="linkFrame" frameborder="0"></iframe>
-                    </v-main>
-                    <v-navigation-drawer permanent :rail="!rail" location="right" app :width="porAula ? w : 'auto'" @mouseleave="rail = !porAula" @mouseenter="rail = true">
-                        <v-list v-if="!porAula" v-for="item in listaAulasPorAluno" id="aulas" :class="{active: item.aula === aula}">
-                            <v-list-item :disabled="item.link === ''" @click="trocaIframe(item, $event)">
-                                <span v-if="item.link !== ''">Aula {{item.aula}}</span>
-                                <span v-if="item.link === ''">Aula {{item.aula}}</span>
-                            </v-list-item>
-                        </v-list>
-                        <div class="d-flex flex-wrap" :width="w">
-                        <div v-if="porAula" density="compact" v-for="item in listaAlunosPorAula" id="aulas" class="d-flex flex-row listaAlunos" :class="{active: item.aula === aula}">
-                            <v-list-item @click="trocaIframeAluno(item, $event)" :disabled="getLink(item) === ''">
-                                <span v-if="getLink(item) !== ''">{{item.aluno}}</span>
-                                <span v-if="getLink(item) === ''">{{item.aluno}}</span>
-                            </v-list-item>
-                        </div>
-                        </div>
-                    </v-navigation-drawer>
+                <img src="img/banner_dark.png" alt="">
 
-                </v-layout>
-            </v-card>
-                    
+            </v-app-bar>
+
+
+            <v-main>
+                <iframe :src="linkFrame" frameborder="0"></iframe>
+            </v-main>
+
+
+            <v-navigation-drawer permanent clipped :rail="aluno == 'Selecione um aluno' ? false : porAula ? !rail : false" :width="aluno == 'Selecione um aluno' ? '0' : porAula ? w : 80">
+                <v-list v-if="!porAula" v-for="item in listaAulasPorAluno" id="aulas"
+                    :class="{active: item.aula === aula}">
+                    <v-list-item :disabled="item.link === ''" @click="trocaIframe(item, $event)">
+                        <span v-if="item.link !== ''">Aula {{item.aula}}</span>
+                        <span v-if="item.link === ''">Aula {{item.aula}}</span>
+                    </v-list-item>
+                </v-list>
+                <div id="drawer" class="d-flex flex-wrap" :width="w">
+                    <div v-if="porAula" density="compact" v-for="item in listaAlunosPorAula" id="aulas"
+                        class="d-flex flex-row listaAlunos" :class="{active: item.aula === aula}">
+                        <v-list-item @click="trocaIframeAluno(item, $event)" :disabled="getLink(item) === ''">
+                            <span v-if="getLink(item) !== ''">{{item.aluno}}</span>
+                            <span v-if="getLink(item) === ''">{{item.aluno}}</span>
+                        </v-list-item>
+                    </div>
+                </div>
+            </v-navigation-drawer>
+
+            <v-footer :class="aluno == 'Selecione um aluno' ? '' : porAula ? 'aula' : 'aluno'" style="font-size: 10px;">
+                <v-row class="align-center">
+                    <v-col>
+                        <div>Linguagem de Programação Web</div> 
+                        <div> (LPW)</div>
+                    </v-col>
+                    <v-col>
+                        <a href="https://github.com/caiohamamura"><div>Dashboard desenvolvido por</div>
+                        <div>prof. Caio Hamamura</div>
+                        </a>
+                    </v-col>
+                    <v-col>
+                        <div>Desenvolvido com</div>
+                        <a href="https://vuejs.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png"
+                            alt="" width="20"></a>
+                        <a href="https://vuetifyjs.com/"><img src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-v3-dark.svg" alt=""
+                            width="23" style="transform:translateY(1px)">
+                        </a>
+                    </v-col>
+                </v-row>
+            </v-footer>
     </div>
     </v-app>
     <script src="script.js"></script>

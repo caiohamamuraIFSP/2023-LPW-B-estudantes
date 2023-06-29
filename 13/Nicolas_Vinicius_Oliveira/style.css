@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+body{
+    background-size: cover;
+    background-color:rgb(68, 68, 68);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+h1{  
+    color:ghostwhite;
+    font-size: 60px;
+    text-align: center;
+}
+
+ul{ 
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+}

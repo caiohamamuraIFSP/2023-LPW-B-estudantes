@@ -1,0 +1,84 @@
+[
+    {
+        "Filme":"Velozes e Furiosos 10",
+        "Sinopse": " Dom Toretto e sua família precisam lidar com o adversário mais letal que já enfrentaram. Alimentada pela vingança, uma ameaça terrível emerge das sombras do passado para destruir o mundo de Dom e todos que ele ama.",
+        "Gênero":"Ação/Aventura",
+        "Duração":"2h21min",
+        "Imagem":"https://i.pinimg.com/564x/40/44/59/4044591e71306098950b4f7ea0450fec.jpg"
+      },
+  
+      {
+          "Filme":"Guardiões da Galáxia 3 ",
+          "Sinopse":" eter Quill deve reunir sua equipe para defender o universo e proteger um dos seus. Se a missão não for totalmente bem-sucedida, isso pode levar ao fim dos Guardiões. ",
+          "Gênero":"Ação/Ficção Científica",
+          "Duração":"2h29min",
+          "Imagem":"https://i.pinimg.com/564x/92/64/1e/92641e1431ff88400fb8ea90b28a4d0f.jpg"
+        },
+    
+      {
+        "Filme":"A pequena Sereia: Live action ",
+        "Sinopse":"Uma jovem sereia faz um acordo com uma bruxa do mar para trocar sua bela voz por pernas humanas para que possa descobrir o mundo acima da água e impressionar um príncipe.",
+        "Gênero":"Fantasia/Musical",
+        "Duração":"2h15min",
+        "Imagem":"https://i.pinimg.com/564x/35/f9/a3/35f9a3a54abf1fe954eb61684c389bec.jpg"
+      },
+  
+      {
+        "Filme":"Homem aranha-Através do Aranhaverso",
+        "Sinopse":"Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso, onde ele encontra uma equipe encarregada de proteger sua própria existência.",
+        "Gênero":"Ação, Super Hérois",
+        "Duração":"2h16min",
+        "Imagem":"https://i.pinimg.com/564x/f9/04/71/f90471ea913f012f79abee0171375c42.jpg"
+      },
+  
+      {
+        "Filme":"Shazam: Fúria dos Deuses",
+        "Sinopse":" Deuses antigos chegam à Terra em busca da magia roubada deles há muito tempo. Shazam e seus aliados são lançados em uma batalha por seus superpoderes, suas vidas e o destino do mundo.",
+        "Categoria":"Ação/Aventura",
+        "Duração":"2h10min",
+        "Imagem":"https://i.pinimg.com/564x/dc/7e/2e/dc7e2e7081da56be7deaf67c993b4e1c.jpg"
+      },
+  
+      {
+        "Filme":"Transformer: O despertar da Fera",
+        "Sinopse":"Uma nova ameaça capaz de destruir todo o planeta surge fazendo com que Optimus Prime e os Autobots se unam a uma poderosa facção de Transformers conhecida como Maximals para salvar a Terra.  ",
+        "Gênero":"Ação/Ficção Científica",
+        "Duração":"2h7min",
+        "Imagem":"https://i.pinimg.com/564x/ab/1f/e8/ab1fe8e2798179857217f9d5df6fef29.jpg"
+      },
+  
+      {
+        "Filme":"Wonka",
+        "Gênero":"Comédia, Infantil, Filme Musical, Fantasia, Aventura",
+        "Sinopse":"Wonka é um futuro filme de fantasia musical britano-americano dirigido por Paul King e escrito por Simon Farnaby e King. Ele serve como uma prequela do romance de 1964, Charlie and the Chocolate Factory de Roald Dahl.",
+        "Duração":"NÃO REVELADO",
+        "Imagem":"https://i.pinimg.com/564x/e6/ff/18/e6ff1863ab1a296b67c3a2c4a75c9673.jpg"
+      },
+  
+      
+      {
+        "Filme":"Barbie",
+        "Sinopse":"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade",
+        "Gênero":"Ficção Científica ",
+        "Duração":"1h54min",
+        "Imagem":"https://i.pinimg.com/564x/5f/33/e8/5f33e82d50ab139dbc567efed013acf2.jpg"
+      },
+  
+       
+      {
+        "Filme":"The Marveles",
+        "Sinopse":"The Marvels é um futuro filme estadunidense de super-herói baseado nas personagens Carol Danvers, Kamala Khan e Monica Rambeau, da Marvel Comics. Produzido pelo Marvel Studios e distribuído pela Walt Disney Studios Motion Pictures, será a sequência de Captain Marvel, uma continuação da série Ms.",
+        "Gênero":"Ação/Aventura",
+        "Duração":"2h10min",
+        "Imagem":"https://i.pinimg.com/564x/1e/47/96/1e479681ff2e0e32ceae2a6d5783e9b1.jpg"
+      },
+  
+      {
+        "Filme":"Wish",
+        "Sinopse":"Wish é um futuro filme musical americano animado por computador produzido pela Walt Disney Animation Studios e lançado pela Walt Disney Pictures. ",
+        "Gênero":"Animação/Infantil",
+        "Duração":"90min",
+        "Imagem":"https://cinebuzz.uol.com.br/media/_versions/tudo-o-que-sabemos-sobre-wish-nova-animacao-que-comemora-os-100-anos-da-disney_widelg.jpg "
+      }
+
+]

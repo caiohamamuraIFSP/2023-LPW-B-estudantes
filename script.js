@@ -11,21 +11,24 @@ const vuetify = createVuetify({
 createApp({
     async created() {
         this.alunos = await (await fetch('alunos.json')).json();
-        this.aluno = Object.keys(this.alunos)[0];
         this.aula = Object.keys(this.alunos[this.aluno]).sort()[0];
     },
     mounted() {
         this.w = window.innerWidth;
+        window.addEventListener('resize', this.windowResize);
+    },
+    unmounted() {
+        window.removeEventListener('resize', this.windowResize);
     },
     data() {
         return {
-            w: '200',
+            w: 200,
             titulo: 'Aluno',
-            aluno: 'João',
+            aluno: 'Selecione um aluno',
             alunos: [],
-            aula: '',
+            aula: 'Selecione uma aula',
             linkFrame: '',
-            porAula: true,
+            porAula: false,
             rail: false,
         }
     },
@@ -41,7 +44,7 @@ createApp({
             if (this.alunos.length == 0) return;
             return Object.keys(this.alunos).sort().map(e => ({
                 key: e,
-                aluno: e.replaceAll('_',' '),
+                aluno: e.replaceAll('_', ' '),
             }));
         },
         nomeAluno() {
@@ -65,11 +68,11 @@ createApp({
         },
     },
     methods: {
-        alunoAlterado(){
+        alunoAlterado() {
             this.linkFrame = '';
             this.aula = '';
         },
-        aulaAlterada(){
+        aulaAlterada() {
             this.linkFrame = '';
             this.aluno = '';
         },
@@ -84,6 +87,9 @@ createApp({
         },
         getLink(item) {
             return this.alunos[item.key][this.aula.toString()];
-        }
+        },
+        windowResize() {
+            this.w = window.innerWidth;
+        },
     }
 }).use(vuetify).mount('#app')
