@@ -12,23 +12,36 @@ createApp({
     async created() {
         this.alunos = await (await fetch('alunos.json')).json();
         this.aluno = Object.keys(this.alunos)[0];
+        this.aula = Object.keys(this.alunos[this.aluno]).sort()[0];
+    },
+    mounted() {
+        this.w = window.innerWidth;
     },
     data() {
         return {
+            w: '200',
             titulo: 'Aluno',
             aluno: 'João',
             alunos: [],
             aula: '',
-            rail: true,
             linkFrame: '',
+            porAula: true,
+            rail: false,
         }
     },
     computed: {
-        aulas() {
+        listaAulasPorAluno() {
             if (this.alunos.length == 0) return;
             return Object.keys(this.alunos[this.aluno]).sort().map(e => ({
                 aula: e,
                 link: this.alunos[this.aluno][e],
+            }));
+        },
+        listaAlunosPorAula() {
+            if (this.alunos.length == 0) return;
+            return Object.keys(this.alunos).sort().map(e => ({
+                key: e,
+                aluno: e.replaceAll('_',' '),
             }));
         },
         nomeAluno() {
@@ -41,22 +54,36 @@ createApp({
                 value: key,
             }));
         },
+        listaAulas() {
+            if (this.alunos.length === 0) return;
+            let umAluno = Object.keys(this.alunos)[0];
+            let aulas = Object.keys(this.alunos[umAluno]).sort();
+            return aulas.map((key) => ({
+                title: `Aula ${key}`,
+                value: key,
+            }));
+        },
     },
     methods: {
-        alterado(){
+        alunoAlterado(){
             this.linkFrame = '';
             this.aula = '';
         },
-        focadoAutocomplete(event) {
-            console.log(event);
-            let input = event.target;
-            input.focus();
-            input.select();
-            input.setSelectionRange(0,input.value.length);
+        aulaAlterada(){
+            this.linkFrame = '';
+            this.aluno = '';
         },
         trocaIframe(item, event) {
             this.linkFrame = item.link;
             this.aula = item.aula;
+        },
+        trocaIframeAluno(item, event) {
+            this.aluno = item.key;
+            this.linkFrame = this.getLink(item);
+            this.rail = false;
+        },
+        getLink(item) {
+            return this.alunos[item.key][this.aula.toString()];
         }
     }
 }).use(vuetify).mount('#app')

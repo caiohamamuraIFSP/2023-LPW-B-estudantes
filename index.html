@@ -17,12 +17,16 @@
         <v-app>
             <div>
                 <v-toolbar dark prominent image="/img/banner_dark.png">
-                    <v-autocomplete prepend-icon="mdi-school" variant="underlined" :items="listaAlunos"
-                        v-model="aluno" @click="focadoAutocomplete" @update:model-value="alterado"></v-autocomplete>
+                    <v-icon :icon="porAula ? 'mdi-lead-pencil' : 'mdi-school'" @click="porAula = !porAula;this.rail = !porAula;"></v-icon>
+                    <v-autocomplete v-if="!porAula" variant="underlined" :items="listaAlunos"
+                        v-model="aluno" @update:model-value="alunoAlterado"></v-autocomplete>
+                        <v-autocomplete v-if="porAula" variant="underlined" :items="listaAulas"
+                        v-model="aula" @update:model-value="aulaAlterada"></v-autocomplete>
 
                     <v-spacer></v-spacer>
 
                 </v-toolbar>
+                
             </div>
 
             <v-card>
@@ -31,13 +35,21 @@
                     <v-main>
                         <iframe :src="linkFrame" frameborder="0"></iframe>
                     </v-main>
-                    <v-navigation-drawer permanent location="right" app width="auto">
-                        <v-list v-for="item in aulas" id="aulas" :class="{active: item.aula === aula}">
-                            <v-list-item :class="{naoFeito: item.link === ''}" @click="trocaIframe(item, $event)">
+                    <v-navigation-drawer permanent :rail="!rail" location="right" app :width="porAula ? w : 'auto'" @mouseleave="rail = !porAula" @mouseenter="rail = true">
+                        <v-list v-if="!porAula" v-for="item in listaAulasPorAluno" id="aulas" :class="{active: item.aula === aula}">
+                            <v-list-item :disabled="item.link === ''" @click="trocaIframe(item, $event)">
                                 <span v-if="item.link !== ''">Aula {{item.aula}}</span>
                                 <span v-if="item.link === ''">Aula {{item.aula}}</span>
                             </v-list-item>
                         </v-list>
+                        <div class="d-flex flex-wrap" :width="w">
+                        <div v-if="porAula" density="compact" v-for="item in listaAlunosPorAula" id="aulas" class="d-flex flex-row listaAlunos" :class="{active: item.aula === aula}">
+                            <v-list-item @click="trocaIframeAluno(item, $event)" :disabled="getLink(item) === ''">
+                                <span v-if="getLink(item) !== ''">{{item.aluno}}</span>
+                                <span v-if="getLink(item) === ''">{{item.aluno}}</span>
+                            </v-list-item>
+                        </div>
+                        </div>
                     </v-navigation-drawer>
 
                 </v-layout>
