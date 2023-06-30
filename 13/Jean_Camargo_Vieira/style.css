@@ -4,6 +4,8 @@
 body{
     background-color:#373f51 ;
     color: gainsboro;
+    display: flex;
+    flex-direction: column;
 }
 header,footer{
     font-family: 'poppins', sans-serif;
@@ -42,3 +44,17 @@ ul li{
 
 }
 
+#carregar {
+    height: 40px;
+    width: max-content;
+    font-size: 16px;
+    font-family: fantasy;
+    align-self: center;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 6px;
+}
+#carregar:hover {
+    background-color: aliceblue;
+    border: none;
+}

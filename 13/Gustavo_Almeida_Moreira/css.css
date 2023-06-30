@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#carregar {
+    width: 200px;
+}
+#pokedex {
+    list-style: none;
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#pokedex li {
+    margin: 2rem;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MinhapaginaVue</title>
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ titulo }}</h1>
+    <ul>
+      <li v-for="item in lista" :key="item.id">{{ item.nome }}</li>
+    </ul>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        titulo: 'Lista de Compras',
+        lista: [
+          { id: 1, nome: 'Queijo' },
+          { id: 2, nome: 'Côco' },
+          { id: 3, nome: 'Macarrão' },
+          { id: 4, nome: 'Arroz' },
+          { id: 5, nome: 'Detergente' },
+        ]
+      }
+    });
+  </script>
+</body>
+</html>

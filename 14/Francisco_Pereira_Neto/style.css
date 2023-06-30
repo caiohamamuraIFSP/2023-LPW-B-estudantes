@@ -1,0 +1,27 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+}
+img{
+    height: 30vh;
+}
+button{
+    background-color:rgb(140, 175, 240);
+    border-color: aliceblue;
+    border-radius: 10%;
+}
+#bri{
+    justify-content: center;
+    text-align: center;
+}
+#pas{
+    justify-content: center;
+    text-align: center;
+}
+#mou{
+    justify-content: center;
+    text-align: center;
+}
