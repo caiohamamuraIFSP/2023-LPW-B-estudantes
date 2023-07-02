@@ -1,46 +1,85 @@
-h1{
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-div{
-    text-align: center;
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
 }
-table{
-    margin: 1em auto;
-    border-collapse: collapse;
+
+.game {
+  border-bottom: 1px solid;
+  height: 300px;
+  width: 800px;
+  position: relative;
+  overflow: hidden;
 }
-td{
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    text-align: center;
+
+.score {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  font-size: x-large;
 }
-.blocked, .flag {
-    background: lightgray;    
+
+.dino {
+  position: absolute;
+  bottom: 0;
+  background-image: url(dino.png);
+  width: 280px;
+  height: 130px;
+  background-size: 280px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
 }
-.n1, .n2, .n3, .n4, .n5, .n6, .n7, .n8 {
-    background-color: #eee;
+
+.cacto {
+  position: absolute;
+  bottom: 0;
+  background-image: url(cacto.jpg);
+  width: 50px;
+  height: 70px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  animation: cacto 3s linear infinite;
 }
-.n1{
-    color: blue;
+
+@keyframes cacto {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 850px;
+  }
 }
-.n2{
-    color: green;
+
+.jump {
+  animation: jump 1.1s linear;
 }
-.n3 {
-    color: red;
-}
-.n4 {
-    color: maroon;
-}
-.n5 {
-    color: blueviolet;
-}
-.n6 {
-    color: darkgoldenrod;
-}
-.n7 {
-    color: orange;
-}
-.n8 {
-    color: tomato;
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  30% {
+    bottom: 80px;
+  }
+
+  50% {
+    bottom: 100px;
+  }
+
+  80% {
+    bottom: 80px;
+  }
+
+  100% {
+    bottom: 0;
+  }
 }
